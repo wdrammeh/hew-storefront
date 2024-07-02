@@ -249,5 +249,5 @@ The middleware also sets a cookie based on the onboarding status of a user. This
 
 ```
 docker build -t hew-storefront .
-docker run --name hew-storefront -p 80:8000 443:8000 --network hew-network --restart unless-stopped -d hew-storefront
+docker run --name hew-storefront -p 80:8000 -p 443:8000 --network hew-network --restart unless-stopped -d hew-storefront
 ```
