@@ -1,1 +1,2 @@
-- Rename project hew-storefront
+- Fix build error on docker build
+- And use env production on docker
