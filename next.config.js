@@ -6,7 +6,7 @@ const store = require("./store.config.json")
  */
 const nextConfig = withStoreConfig({
   features: store.features,
-  reactStrictMode: true,
+  reactStrictMode: false,
   images: {
     remotePatterns: [
       {
@@ -27,8 +27,15 @@ const nextConfig = withStoreConfig({
       },
     ],
   },
+  // typescript: {
+  //   // !! WARN !!
+  //   // Dangerously allow production builds to successfully complete even if
+  //   // your project has type errors.
+  //   // !! WARN !!
+  //   ignoreBuildErrors: true,
+  // },
 })
 
-console.log("next.config.js", JSON.stringify(module.exports, null, 2))
-
 module.exports = nextConfig
+
+console.log("next.config.js", JSON.stringify(module.exports, null, 2))

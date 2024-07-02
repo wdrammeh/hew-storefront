@@ -1,13 +1,15 @@
 # HEW Web App
 
-This web app is built with:
+HEW E-Commerce Web Application.
+
+**Technologies**
 
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Medusa](https://medusajs.com/)
 
-Features include:
+**Features**
 
 - Full ecommerce support:
   - Product Detail Page
@@ -243,16 +245,9 @@ If you want to use the `countryCode` param in your code, there’s two ways to d
 
 The middleware also sets a cookie based on the onboarding status of a user. This is related to the Medusa Admin onboarding flow, and may be safely removed in your production storefront.
 
-# Resources
+# Docker
 
-## Learn more about Medusa
-
-- [Website](https://www.medusajs.com/)
-- [GitHub](https://github.com/medusajs)
-- [Documentation](https://docs.medusajs.com/)
-
-## Learn more about Next.js
-
-- [Website](https://nextjs.org/)
-- [GitHub](https://github.com/vercel/next.js)
-- [Documentation](https://nextjs.org/docs)
+```
+docker build -t hew-web .
+docker run --name hew-web-app -p 80:8000 443:8000 --restart unless-stopped -d hew-web
+```
