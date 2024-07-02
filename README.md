@@ -81,7 +81,7 @@ Before you can search you will need to install the plugin in your Medusa server,
 After your installed the meilisearch plugin on your medusa server, run the following script to generate an API Key to be used here on the store-front.
 
 ```
-curl -X POST 'http://localhost:7700/keys' -H 'Content-Type: application/json' -H 'Authorization: Bearer Waksd=3000676500' --data-binary '{ "description": "Search products", "actions": ["search"], "indexes": ["products"], "expiresAt": "2025-01-01T00:00:00Z" }'
+curl -X POST 'http://localhost:7700/keys' -H 'Content-Type: application/json' -H 'Authorization: Bearer kidsintech@3000676500' --data-binary '{ "description": "Search products", "actions": ["search"], "indexes": ["products"], "expiresAt": "2025-01-01T00:00:00Z" }'
 ```
 
 ## (Optional) Shifting to Algoliasearch
@@ -248,6 +248,6 @@ The middleware also sets a cookie based on the onboarding status of a user. This
 # Docker
 
 ```
-docker build -t hew-storefront .
-docker run --name hew-storefront -p 80:8000 -p 443:8000 --network hew-network --restart unless-stopped -d hew-storefront
+docker build -t storefront .
+docker run --name storefront -p 80:8000 -p 443:8000 --network hew-network --restart unless-stopped -d storefront
 ```
