@@ -26,6 +26,4 @@ COPY . .
 EXPOSE 8000
 
 # ENTRYPOINT ["gatsby", "develop", "-H", "0.0.0.0", "-p", "8000" ]
-# CMD [ "yarn", "dev" ]
-# CMD [ "yarn", "prod" ]
-CMD [ "yarn", "dev" ]
+CMD [ "yarn", "prod" ]
