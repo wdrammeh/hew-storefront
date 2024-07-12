@@ -61,7 +61,7 @@ const Register = ({ setCurrentView }: Props) => {
         </div>
         <ErrorMessage error={message} data-testid="register-error" />
         <span className="text-center text-ui-fg-base text-small-regular mt-6">
-          By creating an account, you agree to HEW Groceries &apos;s{" "}
+          By creating an account, you agree to HEW Grocery &apos;s{" "}
           <LocalizedClientLink
             href="/content/privacy-policy"
             className="underline"

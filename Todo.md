@@ -2,3 +2,4 @@
 - And use env production on docker
 - GitHub actions
 - Rm "Medusa", "Next", 
+- Slideshow on landing-page, hint to the left

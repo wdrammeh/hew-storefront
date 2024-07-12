@@ -11,7 +11,7 @@ import InteractiveLink from "@modules/common/components/interactive-link"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 export const metadata: Metadata = {
-  title: "HEW Groceires",
+  title: "HEW Grocery",
   description:
     "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
 }
@@ -79,7 +79,7 @@ export default async function Home({
             level="h1"
             className="flex flex-row text-3xl-regular gap-x-2 items-baseline"
           >
-            Welcome to HEW Groceries!
+            Welcome to HEW Grocery!
           </Heading> */}
           <Text className="text-base-regular mb-3 max-w-[32rem]">
             Use the link below to start browsing our products.
