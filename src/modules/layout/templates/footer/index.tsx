@@ -109,8 +109,8 @@ export default async function Footer() {
                 <li>
                   <a
                     href="#!"
-                    target="_blank"
-                    rel="noreferrer"
+                    // target="_blank"
+                    // rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
                     Terms
@@ -119,8 +119,8 @@ export default async function Footer() {
                 <li>
                   <a
                     href="#!"
-                    target="_blank"
-                    rel="noreferrer"
+                    // target="_blank"
+                    // rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
                     Privacy
