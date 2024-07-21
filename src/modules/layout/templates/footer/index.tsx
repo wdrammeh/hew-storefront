@@ -16,7 +16,7 @@ export default async function Footer() {
           <div>
             <LocalizedClientLink
               href="/"
-              className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
+              className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base"
             >
               {/* <div className="flex justify-center mb-4">HEW Grocery</div> */}
               <div className="border p-10 rounded">
