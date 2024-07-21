@@ -13,7 +13,7 @@ const Hero = () => {
             HEW Online Grocery
           </h1>
           <div className="max-w-2xl mb-6 font-light text-gray-500 mb-8 md:text-lg text-xl">
-            Discover a wide selection of quality groceries, from farm-fresh
+            Enjoy a wide selection of quality groceries, from farm-fresh
             produce to pantry essentials, delivered right to your doorstep.
           </div>
           <div className="flex gap-4">
