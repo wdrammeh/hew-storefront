@@ -27,8 +27,25 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
           {({ open, close }) => (
             <>
               <div className="relative flex h-full">
-                <Popover.Button data-testid="nav-menu-button" className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base">
-                  Menu
+                <Popover.Button
+                  data-testid="nav-menu-button"
+                  className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="size-6 w-8"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                  </svg>
+                  {/* Menu */}
                 </Popover.Button>
               </div>
 
@@ -43,7 +60,10 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                 leaveTo="opacity-0"
               >
                 <Popover.Panel className="flex flex-col absolute w-full pr-4 sm:pr-0 sm:w-1/3 2xl:w-1/4 sm:min-w-min h-[calc(100vh-1rem)] z-30 inset-x-0 text-sm text-ui-fg-on-color m-2 backdrop-blur-2xl">
-                  <div data-testid="nav-menu-popup" className="flex flex-col h-full bg-[rgba(3,7,18,0.5)] rounded-rounded justify-between p-6">
+                  <div
+                    data-testid="nav-menu-popup"
+                    className="flex flex-col h-full bg-[rgba(3,7,18,0.5)] rounded-rounded justify-between p-6"
+                  >
                     <div className="flex justify-end" id="xmark">
                       <button data-testid="close-menu-button" onClick={close}>
                         <XMark />

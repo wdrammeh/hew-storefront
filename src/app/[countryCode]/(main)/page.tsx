@@ -8,7 +8,6 @@ import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
 import { Button, Heading, Text } from "@medusajs/ui"
 import InteractiveLink from "@modules/common/components/interactive-link"
-import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 export const metadata: Metadata = {
   title: "HEW Grocery",
@@ -75,22 +74,10 @@ export default async function Home({
       {/* No Collection? */}
       {collections.length == 0 && (
         <div className="flex py-16 flex-col gap-y-4 items-center justify-center">
-          {/* <Heading
-            level="h1"
-            className="flex flex-row text-3xl-regular gap-x-2 items-baseline"
-          >
-            Welcome to HEW Grocery!
-          </Heading> */}
           <Text className="text-base-regular mb-3 max-w-[32rem]">
             Use the link below to start browsing our products.
           </Text>
           <div>
-            {/* <LocalizedClientLink href="/store">
-              <>
-                <span className="sr-only">Go to all products page</span>
-                <Button variant="primary" size="large">Explore products</Button>
-              </>
-            </LocalizedClientLink> */}
             <InteractiveLink href="/store">Explore products</InteractiveLink>
           </div>
         </div>
