@@ -18,13 +18,13 @@ export default async function Footer() {
               href="/"
               className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
             >
-              {/* HEW Grocery */}
-              <div className="">
+              {/* <div className="flex justify-center mb-4">HEW Grocery</div> */}
+              <div className="border p-10 rounded">
                 <Image
                   src={hewLogo}
-                  width={250}
+                  width={300}
                   height={200}
-                  alt="HEW Company"
+                  alt="HEW Grocery"
                 />
               </div>
             </LocalizedClientLink>
@@ -90,15 +90,13 @@ export default async function Footer() {
             )}
             {collections && collections.length > 0 && (
               <div className="flex flex-col gap-y-2">
-                <span className="txt-small-plus txt-ui-fg-base">
-                  Collections
-                </span>
+                <Text className="txt-xlarge">Collections</Text>
                 <ul
                   className={clx(
                     "grid grid-cols-1 gap-2 text-ui-fg-subtle txt-small",
-                    // {
-                    //   "grid-cols-2": (collections?.length || 0) > 3,
-                    // }
+                    {
+                      "grid-cols-2": (collections?.length || 0) > 5,
+                    }
                   )}
                 >
                   {collections?.slice(0, 6).map((c) => (
@@ -115,7 +113,7 @@ export default async function Footer() {
               </div>
             )}
             <div className="flex flex-col gap-y-2">
-              <span className="txt-small-plus txt-ui-fg-base">HEW Company</span>
+              <Text className="txt-xlarge">HEW Grocery</Text>
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
                   <a
