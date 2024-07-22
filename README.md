@@ -7,19 +7,20 @@ HEW E-Commerce Web Application.
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Typescript](https://www.typescriptlang.org/)
-- [Medusa](https://medusajs.com/)
+- [MedusaJS](https://medusajs.com/)
 
 **Features**
 
 - Full ecommerce support:
   - Product Detail Page
   - Product Overview Page
-  - Search with Algolia / MeiliSearch
+  - Search with MeiliSearch
   - Product Collections
   - Cart
-  - Checkout with PayPal and Stripe
+  - Checkout with Stripe
   - User Accounts
   - Order Details
+  
 - Full Next.js 14 support:
   - App Router
   - Next fetching/caching

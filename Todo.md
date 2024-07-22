@@ -1,5 +1,2 @@
-- Fix build error on docker build
-- And use env production on docker
-- GitHub actions
-- Rm "Medusa", "Next", 
+- Use env production on docker
 - Slideshow on landing-page, hint to the left

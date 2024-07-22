@@ -12,7 +12,7 @@ import InteractiveLink from "@modules/common/components/interactive-link"
 export const metadata: Metadata = {
   title: "HEW Grocery",
   description:
-    "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
+    "A performant frontend ecommerce web application for all your grocery needs.",
 }
 
 const getCollectionsWithProducts = cache(
